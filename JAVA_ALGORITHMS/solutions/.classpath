@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="1_misc/src"/>
+	<classpathentry kind="src" path="2_sort/src"/>
+	<classpathentry kind="src" path="3_recursion/src"/>
+	<classpathentry kind="src" path="4_binaryTree/src"/>
+	<classpathentry kind="src" path="5_graph/src"/>
+	<classpathentry kind="src" path="leetcode/src"/>
+	<classpathentry kind="src" path="test/src"/>
+	<classpathentry kind="src" path="_ch1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
