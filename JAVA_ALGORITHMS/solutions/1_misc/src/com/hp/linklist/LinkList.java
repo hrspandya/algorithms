@@ -39,7 +39,7 @@ public class LinkList {
 			
 	}
 	
-	
+	 
 	public void insertFirst(int index, double data){
 		Link current = new Link(index, data);
 		current.next = this.first;
