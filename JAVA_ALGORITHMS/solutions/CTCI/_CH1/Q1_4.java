@@ -1,4 +1,4 @@
-package com.hp.ch1;
+package _CH1;
 
 public class Q1_4 {
 

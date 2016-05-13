@@ -1,4 +1,4 @@
-package com.hp.ch1;
+package _CH1;
 	
 /*
  * Given an image represented by an NxN matrix, 

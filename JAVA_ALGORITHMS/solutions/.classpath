@@ -7,7 +7,7 @@
 	<classpathentry kind="src" path="5_graph/src"/>
 	<classpathentry kind="src" path="leetcode/src"/>
 	<classpathentry kind="src" path="test/src"/>
-	<classpathentry kind="src" path="_ch1"/>
+	<classpathentry kind="src" path="CTCI"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
