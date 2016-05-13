@@ -9,6 +9,12 @@ import java.util.Arrays;
 public class Q1_3 {
 	
 	/*
+	 * First find all permutation of the string and keep checking if other string is found..if so they both are permutation of each other 
+	 * this can take n^2 solution 
+	 */
+	
+	
+	/*
 	 * Best way is to sort both words and check if they both are same, if so they are permutation of each other
 	 * Permutation is only possible if both have string length of same size
 	 */
