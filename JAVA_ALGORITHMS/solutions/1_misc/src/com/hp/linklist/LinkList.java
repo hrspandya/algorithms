@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class LinkList {
 	
-	Link first;
+	public Link first;
 		
 	public LinkList(){
 		first = null;
