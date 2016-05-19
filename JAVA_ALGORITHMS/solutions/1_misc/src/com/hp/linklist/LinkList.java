@@ -7,9 +7,11 @@ import java.util.Arrays;
 public class LinkList {
 	
 	public Link first;
+	public int length;
 		
 	public LinkList(){
 		first = null;
+		length = 0;
 	}
 	
 	
@@ -36,6 +38,9 @@ public class LinkList {
 			previous.next = link;
 			link.next = current;
 		}
+		
+		//increment the length
+		this.length = this.length + 1;
 			
 	}  
 	
