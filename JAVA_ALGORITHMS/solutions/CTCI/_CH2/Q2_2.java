@@ -69,13 +69,13 @@ public class Q2_2 {
 	
 	public static void main(String[] args) {
 		LinkList linklist = new LinkList();
-		linklist.insert(1, 1);
-		linklist.insert(2, 2);
-		linklist.insert(3, 3);
-		linklist.insert(4, 4);
-		linklist.insert(5, 5);
-		linklist.insert(6, 6);
-		linklist.insert(7, 7);
+		linklist.insert(1);
+		linklist.insert(2);
+		linklist.insert(3);
+		linklist.insert(4);
+		linklist.insert(5);
+		linklist.insert(6);
+		linklist.insert(7);
 		linklist.displayList();
 		
 		System.out.println("------------------------");

@@ -1,19 +1,17 @@
 package com.hp.linklist;
 
 public class Link {
-	
-	public int index;
+		
 	public double data;
 	public Link next;
 	
 	
-	public Link(int index, double data){
-		this.index = index;
+	public Link(double data){		
 		this.data = data;		
 	}
 	
 	public void displayLink(){
-		System.out.println(this.index + "   " + this.data);
+		System.out.println(this.data);
 	}
 	
 	

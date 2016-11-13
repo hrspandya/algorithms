@@ -15,13 +15,14 @@ public class LinkList {
 	}
 	
 	
-	public void insert(int index, double data){
+	public void insert(double data){
 		
 		Link current = first;
 		Link previous = null;
 		Link next = null;
-		Link link = new Link(index, data);
-				
+		Link link = new Link(data);
+		
+		//insert in sorted fashion		
 		while(current != null){			
 			if(current.data < data){
 				previous = current;
@@ -45,8 +46,8 @@ public class LinkList {
 	}  
 	
 	 
-	public void insertFirst(int index, double data){
-		Link current = new Link(index, data);
+	public void insertFirst(double data){
+		Link current = new Link(data);
 		current.next = this.first;
 		first = current;
 	}

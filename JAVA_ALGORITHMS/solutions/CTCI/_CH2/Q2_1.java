@@ -82,9 +82,9 @@ public class Q2_1 {
 	
 	public static void main(String[] args) {
 		LinkList linklist = new LinkList();
-		linklist.insert(0, 1);
-		linklist.insert(0, 3);
-		linklist.insert(0, 1);
+		linklist.insert(1);
+		linklist.insert(3);
+		linklist.insert(1);
 		linklist.displayList();
 		
 		deleteDuplicate(linklist);
