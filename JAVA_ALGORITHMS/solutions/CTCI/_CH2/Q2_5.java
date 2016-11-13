@@ -22,6 +22,8 @@ public class Q2_5 {
 	 */
 	private static String addNumbers(LinkList list1, LinkList list2) {
 		String result = "";
+		int counter = 0;
+		double value = 0;
 		LinkList l1 = null;
 		LinkList l2 = null;
 		Link current1 = null;
@@ -39,20 +41,19 @@ public class Q2_5 {
 		current2 = l2.first;
 		
 		while(current1 != null){
-			double value = 0;
-			if(current2 != null){
-				value = current1.data + current2.data;
-			}else{
-				value = current1.data + 0;
-			}
-		
-			String str = String.valueOf(value);
-			result = result + str.substring(str.length() - 1, str.length());
 			
+			if(current2 != null){
+				value = value + Math.pow(10, counter) * current1.data;
+				value = value + Math.pow(10, counter) * current2.data;
+			}else{
+				value = value + Math.pow(10, counter) * current1.data;
+			}
+			counter++;
 			current1 = current1.next;
+			current2 = current2.next;
 		}
 		
-		return result;	
+		return String.valueOf(value);	
 	}
 	
 	/*

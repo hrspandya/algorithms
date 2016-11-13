@@ -36,6 +36,7 @@ public class Q2_3 {
 		
 		//Now delte the current.next node
 		current.next = current.next.next;
+			
 		
 	}
 	

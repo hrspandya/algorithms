@@ -18,7 +18,7 @@ public class Q2_2 {
 		Link current = linklist.first;
 		int count = 1;
 		
-		//if k is bigger than linklist, then return null since, we can do that.
+		//if k is bigger than linklist, then return null since, we cant do that.
 		if(k > linklist.length){
 			return null;
 		}
