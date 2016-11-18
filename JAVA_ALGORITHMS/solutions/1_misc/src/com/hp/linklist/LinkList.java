@@ -15,6 +15,24 @@ public class LinkList {
 	}
 	
 	
+	public void insertWithoutSort(double data){
+		Link current = this.first;		
+		Link previous = null;
+		Link link = new Link(data);
+		
+		while(current != null){		
+			previous = current;
+			current = current.next;
+		}
+		
+		if(previous == null){			
+			this.first = link;
+		}else{
+			previous.next = link;
+		}
+	}
+	
+	
 	public void insert(double data){
 		
 		Link current = first;
