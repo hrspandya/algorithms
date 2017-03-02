@@ -1,4 +1,4 @@
-package _CH3_3;
+package _CH3;
 
 public class Q3_6 {
 	

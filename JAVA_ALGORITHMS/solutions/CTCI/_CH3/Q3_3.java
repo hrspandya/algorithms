@@ -1,4 +1,4 @@
-package _CH3_3;
+package _CH3;
 
 /*
  * Question : Imagine a (literal) stack of plates. If the stack gets too high, it migh t topple. 
