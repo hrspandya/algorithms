@@ -29,11 +29,18 @@ public class BinaryTreeMain {
 		System.out.println("Finding Minimum "+ mytree.findMinimum());
 		System.out.println("Finding Maximum "+ mytree.findMaximum());
 		
-		System.out.println(mytree.search(3));
-		System.out.println(mytree.search(13));
+		System.out.println("Found 3 : " + mytree.search(3));
+		System.out.println("Found 13 : " + mytree.search(13));
 		
 		int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-		mytree.createMinimalBST(array);
+		Node t = mytree.createMinimalBST(array);
+		
+		
+		System.out.println( "is BST : " + mytree.isBST());
+		
+		
+		System.out.println( "get Height : " + mytree.getHeight());
+		
 		
 		
 	}

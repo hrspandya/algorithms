@@ -240,14 +240,50 @@ public class Tree {
 	}
 
 
-	public void isBalanced(){
+	public boolean isBST(){
+		 return isBST(this.root);
+	}
+	
+	
+	
+	private boolean isBST(Node node) {
+		double value = node.value;
 		
+		if(node != null){	
+			
+			if(node.leftNode != null && node.leftNode.value < value && !this.isBST(node.leftNode)){							
+				return false;
+			}
+						
+			if(node.rightNode != null && node.rightNode.value > value && !this.isBST(node.rightNode)){				
+				return false;
+			}
+		}		
+		
+		return true;
+	}
+
+
+	public int getHeight(){
+		return getHeight(this.root);
+	}
+
+
+	private int getHeight(Node node) {
+		if(node != null){
+			int leftHeight = getHeight(node.leftNode);
+			int rightHeight = getHeight(node.rightNode);
+			
+			return Math.max(leftHeight, rightHeight) + 1;
+			
+		}else{
+			
+			return 0;
+		
+		}				
 	}
 	
 	
-	public void getHeight(){
-				
-	}
 	
 	
 }
