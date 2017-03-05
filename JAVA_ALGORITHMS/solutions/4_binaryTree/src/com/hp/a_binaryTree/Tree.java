@@ -192,7 +192,7 @@ public class Tree {
 						parent = parent.leftNode;
 					}
 				}else{
-					
+					//Go to Right
 					current = parent.rightNode;
 					
 					if(current == null){
@@ -209,6 +209,45 @@ public class Tree {
 				
 	}
 	
+	
+	
+	//minimal BST means, create binary search tree from sorted array 
+	public Node createMinimalBST(int[] array){
+		int start = 0;
+		int end = array.length - 1;		
+		Node nodeTree = this.createMinimalBST(array, start, end);
+		return nodeTree;
+	}
+	
+	
+	
+	private Node createMinimalBST(int[] array, int start, int end) {
+		int mid = (start + end)/2;
+		
+		if(end < start){
+			return null;
+		}
+		
+		int midValue = array[mid];
+		Node node = new Node();
+		node.iData = midValue;
+		node.value = midValue;
+		
+		node.leftNode = createMinimalBST(array, start, mid - 1);
+		node.rightNode = createMinimalBST(array, mid + 1, end);
+		
+		return node;
+	}
+
+
+	public void isBalanced(){
+		
+	}
+	
+	
+	public void getHeight(){
+				
+	}
 	
 	
 }

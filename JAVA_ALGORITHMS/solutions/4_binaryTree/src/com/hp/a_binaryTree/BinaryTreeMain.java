@@ -32,6 +32,9 @@ public class BinaryTreeMain {
 		System.out.println(mytree.search(3));
 		System.out.println(mytree.search(13));
 		
+		int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		mytree.createMinimalBST(array);
+		
 		
 	}
 
