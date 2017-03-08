@@ -1,4 +1,4 @@
-package CH4_3;
+package _CH4.CH4_3;
 
 import com.hp.a_binaryTree.Node;
 import com.hp.a_binaryTree.Tree;
