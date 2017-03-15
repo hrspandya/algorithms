@@ -8,6 +8,7 @@ public class TreeNode {
 	public TreeNode left;    
 	public TreeNode right; 
 	public TreeNode parent;
+	public boolean isVisited = false;
 	private int size = 0;
 
 	public TreeNode(int d) {
