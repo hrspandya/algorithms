@@ -15,13 +15,11 @@ public class Solution_1 {
 	 * see the last isVisited = true before you find your node and that will be your ancestor.
 	 */
 	
-	
 	/*
 	 * Other Best Solution will be is to keep going to parent until you reach root for one node and for 
 	 * every node set isVisited = true; Now from another Node keep going to parent until you see 
 	 * node which has isVisited = true and you have find an ancestor. 
 	 */
-	
 	
 	private static TreeNode commonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 		int count = 0;
