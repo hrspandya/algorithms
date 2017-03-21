@@ -4,10 +4,10 @@ import CtCILibrary.TreeNode;
 
 public class Solution_2 {
 	
-			//Check if p is on left side, Check if q is on left side 
-			// if p and q both are on left side root is ancestor
-			//else if p,q is on left then go to left and recurse 
-			// else if p,q are on right side then go to right and recurse 
+	//Check if p is on left side, Check if q is on left side 
+	// if p and q both are on left side root is ancestor
+	//else if p,q is on left then go to left and recurse 
+	// else if p,q are on right side then go to right and recurse 
 	private static TreeNode commonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 		if(root == null){
 			return null;
