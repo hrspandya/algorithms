@@ -69,6 +69,7 @@ public class Solution_1 {
 		
 		TreeNode ancestor = commonAncestor(root, p, q);
 		System.out.println(ancestor.data);
+		System.out.println("");
 
 	}
 	
