@@ -1,6 +1,14 @@
-package _CH8.CH8_1;
+package _CH9.CH9_1;
 
 public class Solution_1 {
+	
+	/*
+	 * A child is running up a staircase with n steps, and 
+	 * can hop either 1step, 2 steps, or 3 steps at a time. 
+	 * Implement a method to count how many possible ways the child can run up the stairs.
+	 */
+	
+	
 	public static int countWaysDP(int n, int[] map) {
 		if (n < 0) {
 			return 0;

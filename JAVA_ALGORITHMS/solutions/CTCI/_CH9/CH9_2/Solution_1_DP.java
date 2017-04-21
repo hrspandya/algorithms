@@ -1,4 +1,4 @@
-package _CH8.CH8_2;
+package _CH9.CH9_2;
 
 import java.awt.Point;
 import java.util.ArrayList;
@@ -7,6 +7,18 @@ import java.util.Hashtable;
 import CtCILibrary.AssortedMethods;
 
 public class Solution_1_DP {
+	
+	/*
+	 * Imagine a robot sitting on the upper left comer of an X by Y grid. 
+	 * The robot can only move in two directions: right and down. 
+	 * How many possible paths are there for the robot to go from (0, 0) to (X, Y) ?
+	 * 
+	 * FOLLOW UP
+	 * Imagine certain spots are "off limits," such that the robot cannot step on them. 
+	 * Design an algorithm to find a path for the robot from the top left to the bottom right
+	 * 
+	 */
+	
 	
 	public static int size = 4;
 	public static int[][] maze = new int[size][size];
