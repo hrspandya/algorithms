@@ -3,12 +3,18 @@ package _CH9.CH9_5;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * Write a method to compute all permutations of a string
+ * https://betterexplained.com/articles/easy-permutations-and-combinations/
+ * https://leetcode.com/problems/permutations/#/solutions 
+ */
+
 public class MySolution_1 {
 	public static int counter = 0;
 	
 	public static void main(String[] args) {
 		
-		int arr[] = {1, 2, 3};
+		int arr[] = {1, 2, 3, 4};
 		
 		System.out.println(arr.toString());
 						
@@ -20,7 +26,7 @@ public class MySolution_1 {
 	public static List<List<Integer>> permute(int[] nums) {
 	   List<List<Integer>> list = new ArrayList<>();
 	   // Arrays.sort(nums); // not necessary
-	   backtrack(list, new ArrayList<>(), nums, 3);
+	   backtrack(list, new ArrayList<>(), nums, 2);
 	   return list;
 	}
 
