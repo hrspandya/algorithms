@@ -1,4 +1,4 @@
-package _2_add_two_numbers;
+package _0_2_add_two_numbers;
 
 public class Solution_1 {
 
