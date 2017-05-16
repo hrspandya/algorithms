@@ -54,7 +54,7 @@ public class Solution_1 {
             }
             colEnd--;
             
-            if (rowBegin <= rowEnd) {
+            if (rowBegin <= rowEnd) {	//we are checking for rows here because we want to make sure there is row to traverse left to
                 // Traverse Left
                 for (int j = colEnd; j >= colBegin; j --) {
                     res.add(matrix[rowEnd][j]);
@@ -62,7 +62,7 @@ public class Solution_1 {
             }
             rowEnd--;
             
-            if (colBegin <= colEnd) {
+            if (colBegin <= colEnd) {	//we are checking for cols here because we want to make sure there is col to traverse upward to
                 // Traver Up
                 for (int j = rowEnd; j >= rowBegin; j --) {
                     res.add(matrix[j][colBegin]);
