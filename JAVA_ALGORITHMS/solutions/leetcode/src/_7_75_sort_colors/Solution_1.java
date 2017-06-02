@@ -24,7 +24,7 @@ public class Solution_1 {
 	        	temp = A[i];
 	        	A[i] = A[end];
 	        	A[end] = temp;
-	        	i--;
+	        	i--;	//you need reduce i because you wanna make sure that swapped int is also considered for example: [0, 1, 2, 1, 0], use case 
 	        	end--;
 	        }
 	    }
