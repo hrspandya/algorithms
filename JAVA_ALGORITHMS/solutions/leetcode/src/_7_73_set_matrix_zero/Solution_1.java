@@ -20,12 +20,12 @@ public class Solution_1 {
 //		printMatrix(m);
 		
 		
-		int[][] n = new int[5][4];
-		n[0] = new int[]{0, 0, 0, 5};
-		n[1] = new int[]{4, 3, 1, 4};
-		n[2] = new int[]{0, 1, 1, 4};
-		n[3] = new int[]{1, 2, 1, 3};
-		n[4] = new int[]{0, 0, 1, 1};		
+		int[][] n = new int[4][4];
+		n[0] = new int[]{1, 2, 3, 4};
+		n[1] = new int[]{5, 0, 5, 2};
+		n[2] = new int[]{8, 9, 2, 0};
+		n[3] = new int[]{5, 7, 2, 1};
+		//n[4] = new int[]{0, 0, 1, 1};		
 		printMatrix(n);
 		setZeroes(n);
 		printMatrix(n);
@@ -33,42 +33,54 @@ public class Solution_1 {
 	}
 	
 	public static void setZeroes(int[][] matrix) {		
-		if (matrix == null || matrix.length == 0 || matrix[0].length == 0) return;
-	     int m = matrix.length, n = matrix[0].length;
-	     boolean row = false, col = false;
-	     for (int i = 0; i < m; i++)
-	         for (int j = 0; j < n; j++){
-	             if (matrix[i][j] == 0) {
-	                 matrix[0][j] = 0;
-	                 matrix[i][0] = 0;
-	                 if (i == 0) row = true;
-	                 if (j == 0) col = true;
-	             }
-	         }
-	     
-	     for (int i = 1; i < m; i++){
-	         if (matrix[i][0] == 0){
-	             for (int j = 1; j < n;j++)
-	                 matrix[i][j] = 0;
-	         }
-	     }
-	     
-	     for (int j = 1; j < n; j++){
-	         if (matrix[0][j] == 0){
-	             for (int i = 1; i < m; i++)
-	                 matrix[i][j] = 0;
-	         }
-	     }
-	     
-	     if (row){
-	         for (int j = 0; j < n; j++)
-	             matrix[0][j] = 0;
-	     }
-	     
-	     if (col){
-	         for(int i = 0; i < m; i++)
-	             matrix[i][0] = 0;
-	     }
+		//first we make sure that every time we see 0 we make that column first cell and row first cell 0
+		// then we loop through everything else except first row and first columns and make them 0, if previous condition met
+		// then we check and make first row and first column 0 base on flag
+		
+		boolean fr = false;
+		boolean fc = false;
+		int rows = matrix.length;
+		int cols = matrix[0].length;
+		int i = 0;
+		int j = 0;
+		
+		for(i = 0; i < rows; i++){
+			for(j = 0; j < cols; j++){
+				if(matrix[i][j] == 0){
+					matrix[0][j] = 0;
+					matrix[i][0] = 0;
+					
+					if(i == 0){
+						fr = true;
+					}
+					
+					if(j == 0){
+						fc = true;
+					}
+				}
+			}			
+		}
+		
+		for(i = 1; i < rows; i++){
+			for(j = 1; j < cols; j++){
+				if(matrix[i][0] == 0 || matrix[0][j] == 0){
+					matrix[i][j] = 0;
+				}
+			}
+		}
+		
+		
+		if(fr == true){
+			for(j = 0; j < cols; j++){
+				matrix[0][j] = 0;
+			}
+		}
+		
+		if(fc == true){
+			for(i = 0; i < rows; i++){
+				matrix[i][0] = 0;
+			}
+		}
 		
 	}
 
