@@ -53,15 +53,14 @@ public class Q2_2 {
 		
 	}
 	
-	private static double nthToLastElement(Link link, int k){
-		Link current = link;
-		if(current == null){
+	private static double nthToLastElement(Link link, int k){		
+		if(link == null){
 			return 0;
 		}
 		
-		double i = nthToLastElement(current.next, k);
+		double i = nthToLastElement(link.next, k) + 1;
 		if(i == k){
-			return current.data;
+			return link.data;
 		}
 		
 		return i;
@@ -84,7 +83,7 @@ public class Q2_2 {
 			result1.displayLink();
 		}		
 		
-		
+		System.out.println(findKthToLastElement2(linklist, 1));
 				
 	}
 	
