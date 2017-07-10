@@ -35,6 +35,14 @@ public class Q2_2 {
 	}
 	
 	
+	/*
+	 * Another awesome solution is to have slow and fast, fast to move k steps forward than slow, 
+	 * after that move slow and fast together when fast.next == null, stop and slow will be pointing to 
+	 * kth to last Element 	 
+	 */
+	
+	
+	
 	
 	
 	
