@@ -46,11 +46,11 @@ public class Q1_3 {
 				word_1_sum = word_1_sum + num1;
 				
 				int num2 = word2.charAt(i);
-				word_2_sum = word_2_sum + num2;
-				
-				if(word_1_sum == word_2_sum){
-					return true;
-				}
+				word_2_sum = word_2_sum + num2;				
+			}
+			
+			if(word_1_sum == word_2_sum){
+				return true;
 			}
 			
 		}
