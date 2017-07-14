@@ -22,6 +22,11 @@ public class Q2_4 {
 	 * In this case just create new linklist and during insert, insert them in order and we are done, 
 	 */
 	
+	/*
+	 * You can also use slow and fast, initially both are pointing at root, 
+	 * then fast will be compared with x, and so on
+	 */
+	
 	
 	public static void main(String[] args) {
 		LinkList list = new LinkList();
