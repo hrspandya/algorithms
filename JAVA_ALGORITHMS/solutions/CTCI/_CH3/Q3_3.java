@@ -9,7 +9,7 @@ package _CH3;
  * (that is, pop () should return the same values as it would if there were just a single stack).
  * 
  * FOLLOW UP
- * Implement a function popAt(int index) which performs apop operation ona specific sub-stack 
+ * Implement a function popAt(int index) which performs operation on specific sub-stack 
  */
 
 //Answer:   Just look at the solution its very easy to implement
