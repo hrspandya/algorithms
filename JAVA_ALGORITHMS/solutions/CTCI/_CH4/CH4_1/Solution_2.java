@@ -12,7 +12,7 @@ public class Solution_2 {
 	 */
 		
 	
-	//Answer: Improved version, 
+	//Answer: Previous version was better and easier,  
 	
 	public static void main(String[] args) {
 		
