@@ -3,7 +3,10 @@ package _CH4.CH4_2;
 import java.util.LinkedList;
 
 public class Solution {
-	
+	/*
+	 * Given a directed graph, design an algorithm to find out whether there is a route between two nodes.
+	 */
+	 
 	public enum State {
 	    VISITING,
 	    VISITED,	    
