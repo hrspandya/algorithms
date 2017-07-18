@@ -8,7 +8,11 @@ import CtCILibrary.AssortedMethods;
 import CtCILibrary.TreeNode;
 
 public class Solution1_BFS {
-
+/*
+ * Question: Given a binary tree, design an algorithm which creates a linked list of all the nodes at
+	each depth (e.g., if you have a tree with depth D, you'll have D linked lists)
+ */
+	
 	public static ArrayList<LinkedList<TreeNode>> createLevelLinkedList(TreeNode root) {
 		ArrayList<LinkedList<TreeNode>> result = new ArrayList<LinkedList<TreeNode>>();
 		
