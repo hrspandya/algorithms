@@ -13,6 +13,7 @@ public class Solution_1 {
 	/*
 	 * Best solution is to update the find method and keep adding isVisited = true , when you are finding other node, 
 	 * see the last isVisited = true before you find your node and that will be your ancestor.
+	 * But NOTE: says that This is not necessarily BST.
 	 */
 	
 	/*
