@@ -4,6 +4,11 @@ import com.hp.a_binaryTree.Node;
 import com.hp.a_binaryTree.Tree;
 
 public class Solution {
+	
+	/*
+	 * Given a sorted (increasing order) array with unique integer elements, 
+	 * write an algo- rithm to create a binary search tree with minimal height.
+	 */
 
 	public static void main(String[] args) {
 		
