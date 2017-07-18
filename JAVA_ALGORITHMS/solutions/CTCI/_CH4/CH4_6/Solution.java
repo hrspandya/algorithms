@@ -5,6 +5,10 @@ import CtCILibrary.TreeNode;
 public class Solution {
 	
 	/*
+	 * Write an algorithm to find the 'next'node (i.e., in-order successor) of a given node in
+		a binary search tree. You may assume that each node has a link to its parent.
+		
+
 	 * Solution:  When we traverse the tree we go all the way to left then current and then right side
 	 * If you draw the Tree, you will see that if node.right != null, next is going to be left most node of node.right
 	 * so if node.right != null do that, 
