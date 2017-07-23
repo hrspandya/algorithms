@@ -25,7 +25,7 @@ public class ConvertIntegerToBinaryString {
 		String result = "";
 		
 		for(int i = 0; i < 32; i++){
-			Integer lsb = new Integer(1 & num);
+			Integer lsb = new Integer(1 & num);	//here 1 means 0001
 			result = lsb.toString() + result ;
 			num = num >> 1;
 		}
