@@ -8,7 +8,7 @@ public class Solution_1A {
 	
 	
 	/*
-	 * A magic index in anarrayA[l...n-l] is defined to be an index such that A[i] = i. 
+	 * A magic index in an arrayA[l...n-l] is defined to be an index such that A[i] = i. 
 	 * Given a sorted array of distinct integers, write a method to find a magic index, if one exists, in array A.
 	 * 
 	 * FOLLOW UP
@@ -60,6 +60,7 @@ public class Solution_1A {
 		for (int i = 0; i < 10; i++) {
 			int size = AssortedMethods.randomIntInRange(5, 20);
 			int[] array = getDistinctSortedArray(size);
+			System.out.println(array);
 			int v2 = magicFast(array);
 			if (v2 == -1 && magicSlow(array) != -1) {
 				int v1 = magicSlow(array);
