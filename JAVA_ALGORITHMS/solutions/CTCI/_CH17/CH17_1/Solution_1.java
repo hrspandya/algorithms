@@ -2,7 +2,7 @@ package _CH17.CH17_1;
 
 public class Solution_1 {
 	/*
-	 * Write a function to swapa number in place (that is, without temporary variables).
+	 * Write a function to swap a number in place (that is, without temporary variables).
 	 * 
 	 * */
 	
