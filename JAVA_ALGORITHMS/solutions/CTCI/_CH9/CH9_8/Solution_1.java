@@ -1,6 +1,12 @@
 package _CH9.CH9_8;
 
 public class Solution_1 {
+	/*
+	 * Given an infinite number of quarters (25 cents), dimes (10 cents), nickels (5 cents) and pennies (1 cent), 
+	 * write code to calculate the number of ways of representing n cents. 
+	 * 
+	 * Solution: Chap 9 Question 1, same problem
+	 */
 	
 	public static int makeChange(int amount, int[] denoms, int index) {
 		if (index >= denoms.length - 1) return 1; // one denom remaining -> one way to do it
