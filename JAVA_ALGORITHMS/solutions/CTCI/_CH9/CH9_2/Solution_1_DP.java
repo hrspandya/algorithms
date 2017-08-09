@@ -20,7 +20,7 @@ public class Solution_1_DP {
 	 */
 	
 	
-	public static int size = 4;
+	public static int size = 2;
 	public static int[][] maze = new int[size][size];
 	
 	public static boolean isFree(int x, int y) {
@@ -79,9 +79,12 @@ public class Solution_1_DP {
 		AssortedMethods.printMatrix(maze);
 		ArrayList<Point> path = new ArrayList<Point>();
 		Hashtable<Point, Boolean> cache = new Hashtable<Point, Boolean>();
-		boolean success = getPath(size - 1, size - 1, path, cache);
+
+		boolean success = getPath(size - 1, size - 1, path);
+		boolean successDP = getPath(size - 1, size - 1, path, cache);
 		
-		if (success) {
+		
+		if (successDP) {
 			String s = AssortedMethods.listOfPointsToString(path);
 			System.out.println("Path: " + " " + s);			
 		} else {
