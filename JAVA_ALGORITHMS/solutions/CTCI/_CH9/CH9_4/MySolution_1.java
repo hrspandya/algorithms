@@ -6,7 +6,8 @@ import java.util.List;
 public class MySolution_1 {
 
 	/*
-	 * Write a method to return all subsets of aset. 
+	 * Write a method to return all subsets of a set. 
+	 * Solution Backtracking
 	 */
 
 	
