@@ -12,7 +12,7 @@ public class Solution2_DFS {
 	public static void createLevelLinkedList(TreeNode root, ArrayList<LinkedList<TreeNode>> lists, int level) {
 		if (root == null) return;
 		LinkedList<TreeNode> list = null;
-		if (lists.size() == level) { // Level not contained in list
+		if (lists.size() == level) { // Also you can check if lists.index(level) exists or not
 			list = new LinkedList<TreeNode>();
 			/* Levels are always traversed in order. So, if this is the first time we've visited level i,
 			 * we must have seen levels 0 through i - 1. We can therefore safely add the level at the end. */

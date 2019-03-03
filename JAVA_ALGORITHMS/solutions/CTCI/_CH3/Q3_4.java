@@ -18,9 +18,25 @@ public class Q3_4 {
 	 */
 	
 	
+	// EASIER SOLUTION
+	// https://www.hackerearth.com/blog/algorithms/tower-hanoi-recursion-game-algorithm-explained/
+	public static void hanoi(int a, String source, String buffer, String destination){
+		if (a == 1) {
+			System.out.println("Move Disk 1 from "+source+" to "+ destination);
+		} else  {
+			hanoi(a - 1, source, destination, buffer);
+			System.out.println("Move Disk" + (a) + " from "+ source +" to " + destination);
+			hanoi(a - 1, buffer, source, destination);
+		}
+	}
+	
 	
 	public static void main(String[] args) {
 		Q3_4 mainClass = new Q3_4();
+		
+		// EASIER SOLUTION
+		hanoi(3, "A", "B", "C");
+		
 		
 		
 		Tower towerOfHanoi = mainClass.new Tower();		
@@ -39,7 +55,6 @@ public class Q3_4 {
 		Stack origin = towerOfHanoi.stacks.get(0);
 		Stack buffer = towerOfHanoi.stacks.get(1);
 		Stack destination = towerOfHanoi.stacks.get(2);
-		
 		
 		towerOfHanoi.moveDisks(3, origin, destination, buffer);		
 	}

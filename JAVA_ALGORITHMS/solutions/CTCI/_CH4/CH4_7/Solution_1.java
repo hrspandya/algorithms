@@ -11,16 +11,25 @@ public class Solution_1 {
 	 */
 	
 	/*
-	 * Best solution is to update the find method and keep adding isVisited = true , when you are finding other node, 
-	 * see the last isVisited = true before you find your node and that will be your ancestor.
-	 * But NOTE: says that This is not necessarily BST.
+	 * BEST SOLUTION: Look at Solution 2, below solution is only good if you have access to parent. 
 	 */
 	
 	/*
-	 * Other Best Solution will be is to keep going to parent until you reach root for one node and for 
+	 * Best Solution will be is to keep going to parent until you reach root for one node and for 
 	 * every node set isVisited = true; Now from another Node keep going to parent until you see 
-	 * node which has isVisited =true and you have find an ancestor. 
+	 * node which has isVisited =true and you have find an ancestor.
+	 * 
+	 *  What if you cant access parent? Solution 2 is the best.
 	 */
+	
+	/*
+	 * Best solution is to update the find method and keep adding isVisited = true , when you are finding other node, 
+	 * see the last isVisited = true before you find your node and that will be your ancestor.
+	 * But NOTE: says that This is not necessarily BST, 
+	 * 
+	 * Since this is not BST, solution 2 is the best.
+	 */
+	
 	
 	private static TreeNode commonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 		int count = 0;

@@ -245,7 +245,8 @@ public class Tree {
 	}
 	
 	
-	
+	// Binary search tree means that every left node should be smaller than parent
+	// and every right node should be bigger than parent value.
 	private boolean isBST(Node node) {
 		double value = node.value;
 		

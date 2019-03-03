@@ -5,9 +5,10 @@ import CtCILibrary.TreeNode;
 public class Solution_2 {
 	
 	//Check if p is on left side, Check if q is on left side 
-	// if p and q both are on left side root is ancestor
-	//else if p,q is on left then go to left and recurse 
-	// else if p,q are on right side then go to right and recurse 
+	// if p and q both are on different direction then root is common ancestor
+	
+	//else if p,q both are on left then go to left and recurse 
+	// else if p,q both are on right side then go to right and recurse 
 	private static TreeNode commonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 		if(root == null){
 			return null;
@@ -17,8 +18,8 @@ public class Solution_2 {
 			return root;
 		}
 		
-		boolean p_on_left = covers(root.left, p);
-		boolean q_on_left = covers(root.left, q);
+		boolean p_on_left = find(root.left, p);
+		boolean q_on_left = find(root.left, q);
 		
 		if(p_on_left != q_on_left){
 			//then root has to be the ancestor
@@ -38,7 +39,7 @@ public class Solution_2 {
 	}
 	
 	
-	private static boolean covers(TreeNode root, TreeNode p) {
+	private static boolean find(TreeNode root, TreeNode p) {
 		if(root == null){
 			return false;
 		}
@@ -48,7 +49,7 @@ public class Solution_2 {
 		}
 		
 		
-		return covers(root.left, p) || covers(root.right, p);
+		return find(root.left, p) || find(root.right, p);
 	}
 
 
